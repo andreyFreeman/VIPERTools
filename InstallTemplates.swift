@@ -9,11 +9,13 @@
 import Foundation
 
 let templatesRelativePath = "/Library/Xcode/Templates/File Templates/VIPER"
+let sourceTemplatesFolder = "File Templates"
 
-func placeFiles(){
+func placeFiles() {
     let fileManager = FileManager.default
     let templatesPath = bash("xcode-select", ["--print-path"]).appending(templatesRelativePath)
-    let sourcePath = fileManager.currentDirectoryPath.appending("/File Templates")
+    let sourcePath = currentDirectory().appending("/"+sourceTemplatesFolder)
+    
     do {
         if !fileManager.fileExists(atPath: templatesPath) {
             try fileManager.createDirectory(atPath: templatesPath, withIntermediateDirectories: false, attributes: nil)
@@ -29,10 +31,10 @@ func placeFiles(){
             }
             terminalPrint("✅  \($0) intalled")
         }
-        terminalPrint("🎉  All installed and ready to go! Please, enjoy 🍺🍺🍺")
+        terminalPrint("🎉  All installed and ready to go! Please, enjoy!! 🍺🍺🍺")
     }
     catch {
-        terminalPrint("💩  ! Something went wrong here. Check 'sudo' is supplied or try manual installation")
+        terminalPrint("💩 ! Something went wrong here. Check 'sudo' is supplied or try manual installation")
     }
 }
 
@@ -57,6 +59,22 @@ func placeFiles(){
 @discardableResult func bash(_ command: String, _ args: [String]) -> String {
     let path = shell("/bin/bash", [ "-l", "-c", "which \(command)" ])
     return shell(path, args)
+}
+
+func currentDirectory() -> String {
+    
+    let currentWorkingDirectory = FileManager.default.currentDirectoryPath
+    let commandDirectory = CommandLine.arguments[0]
+    
+    if commandDirectory.hasPrefix("/") {
+        return (commandDirectory as NSString).deletingLastPathComponent
+    } else {
+        let currentWorkingDirectoryUrl = URL(fileURLWithPath: currentWorkingDirectory)
+        guard let path = URL(string: commandDirectory, relativeTo: currentWorkingDirectoryUrl)?.path else {
+            return currentWorkingDirectory
+        }
+        return (path as NSString).deletingLastPathComponent
+    }
 }
 
 func terminalPrint(_ printable: Any) {
