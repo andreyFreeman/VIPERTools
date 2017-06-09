@@ -46,5 +46,9 @@ protocol ___FILEBASENAMEASIDENTIFIER___Input: class {
 }
 
 protocol ___FILEBASENAMEASIDENTIFIER___Output: class {
+    
+}
 
+protocol ___FILEBASENAMEASIDENTIFIER___IO: class, ___FILEBASENAMEASIDENTIFIER___Input {
+    weak var output: ___FILEBASENAMEASIDENTIFIER___Output? { set get }
 }

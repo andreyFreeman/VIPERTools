@@ -26,9 +26,10 @@ func placeFiles() {
             terminalPrint("intalling: \($0)")
             let sourceItem      = sourcePath.appending("/"+$0)
             let destinationItem = templatesPath.appending("/"+$0)
-            if !fileManager.fileExists(atPath: destinationItem) {
-                try fileManager.copyItem(atPath: sourceItem, toPath: templatesPath.appending("/"+$0))
+            if fileManager.fileExists(atPath: destinationItem) {
+                try fileManager.removeItem(atPath: destinationItem)
             }
+            try fileManager.copyItem(atPath: sourceItem, toPath: templatesPath.appending("/"+$0))
             terminalPrint("✅  \($0) intalled")
         }
         terminalPrint("🎉  All installed and ready to go! Please, enjoy!! 🍺🍺🍺")
