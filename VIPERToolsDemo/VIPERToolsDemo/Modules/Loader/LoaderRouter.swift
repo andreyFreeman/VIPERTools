@@ -8,6 +8,7 @@
 //
 
 import UIKit
+import ServiceLocator
 
 final class LoaderRouter: LoaderWireframeProtocol {
     
@@ -15,7 +16,7 @@ final class LoaderRouter: LoaderWireframeProtocol {
     
     static func createModule(output: LoaderOutput? = nil) throws -> ViperModule<UIViewController, LoaderIO> {
         let view = LoaderViewController(nibName: nil, bundle: nil)
-        let interactor = LoaderInteractor()
+        let interactor = LoaderInteractor(service: try inject())
         let router = LoaderRouter()
         let presenter = LoaderPresenter(view: view, interactor: interactor, router: router)
         
@@ -25,5 +26,9 @@ final class LoaderRouter: LoaderWireframeProtocol {
         presenter.output = output
         
         return ViperModule(view: view, input: presenter)
+    }
+    
+    func onFinish() {
+        
     }
 }

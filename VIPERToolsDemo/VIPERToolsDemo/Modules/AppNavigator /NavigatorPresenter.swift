@@ -13,7 +13,7 @@ final class NavigatorPresenter {
 
     fileprivate weak var view: NavigatorViewProtocol!
     fileprivate let interactor: NavigatorInteractorProtocol
-    fileprivate let router: NavigatorWireframeProtocol
+    let router: NavigatorWireframeProtocol
     
     weak var output: NavigatorOutput?
 
@@ -34,11 +34,6 @@ extension NavigatorPresenter: NavigatorInteractorPresenter {
 
 extension NavigatorPresenter: NavigatorIO {
     func showLoader(animated: Bool) {
-        do {
-            try router.navigateToLoader(with: self, animated: animated)
-        }
-        catch let error {
-            print("\(self).\(#function) \(error)")
-        }
+        router.navigateToLoader(with: self, animated: animated)
     }
 }

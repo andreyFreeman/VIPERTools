@@ -9,8 +9,8 @@
 
 import UIKit
 
-final class ___FILEBASENAMEASIDENTIFIER___View: UIView, ___FILEBASENAMEASIDENTIFIER___ViewProtocol {
+final class ___VARIABLE_moduleName___View: UIView, ___VARIABLE_moduleName___ViewProtocol {
 
-	var presenter: ___FILEBASENAMEASIDENTIFIER___ViewPresenter!
+	var presenter: ___VARIABLE_moduleName___ViewPresenter!
 
 }

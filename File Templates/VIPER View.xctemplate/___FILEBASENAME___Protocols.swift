@@ -11,44 +11,44 @@ import Foundation
 
 // MARK: - Wireframe
 
-protocol ___FILEBASENAMEASIDENTIFIER___WireframeProtocol: class {
+protocol ___VARIABLE_moduleName___WireframeProtocol: class {
 
 }
 
 // MARK: - Presenter
 
-protocol ___FILEBASENAMEASIDENTIFIER___ViewPresenter: class {
+protocol ___VARIABLE_moduleName___ViewPresenter: class {
     
 }
 
-protocol ___FILEBASENAMEASIDENTIFIER___InteractorPresenter: class {
+protocol ___VARIABLE_moduleName___InteractorPresenter: class {
     
 }
 
-typealias ___FILEBASENAMEASIDENTIFIER___PresenterProtocol = ___FILEBASENAMEASIDENTIFIER___ViewPresenter & ___FILEBASENAMEASIDENTIFIER___InteractorPresenter
+typealias ___VARIABLE_moduleName___PresenterProtocol = ___VARIABLE_moduleName___ViewPresenter & ___VARIABLE_moduleName___InteractorPresenter
 
 // MARK: - Interactor
 
-protocol ___FILEBASENAMEASIDENTIFIER___InteractorProtocol: class {
+protocol ___VARIABLE_moduleName___InteractorProtocol: class {
     
 }
 
 // MARK: - View
 
-protocol ___FILEBASENAMEASIDENTIFIER___ViewProtocol: class {
+protocol ___VARIABLE_moduleName___ViewProtocol: class {
     
 }
 
 // MARK: - IO
 
-protocol ___FILEBASENAMEASIDENTIFIER___Input: class {
+protocol ___VARIABLE_moduleName___Input: class {
     
 }
 
-protocol ___FILEBASENAMEASIDENTIFIER___Output: class {
+protocol ___VARIABLE_moduleName___Output: class {
 
 }
 
-protocol ___FILEBASENAMEASIDENTIFIER___IO: class, ___FILEBASENAMEASIDENTIFIER___Input {
-    weak var output: ___FILEBASENAMEASIDENTIFIER___Output? { set get }
+protocol ___VARIABLE_moduleName___IO: class, ___VARIABLE_moduleName___Input {
+    weak var output: ___VARIABLE_moduleName___Output? { set get }
 }

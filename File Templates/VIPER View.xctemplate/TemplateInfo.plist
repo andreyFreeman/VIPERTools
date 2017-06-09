@@ -26,11 +26,11 @@
 	<array>
 		<dict>
 			<key>Description</key>
-			<string>Name of module that you need create</string>
+			<string>Name of module to create</string>
 			<key>Default</key>
 			<string></string>
 			<key>Identifier</key>
-			<string>viperModuleName</string>
+			<string>moduleName</string>
 			<key>Name</key>
 			<string>Module name</string>
 			<key>Required</key>
@@ -40,7 +40,7 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_viperModuleName___</string>
+			<string>___VARIABLE_moduleName___</string>
 			<key>Identifier</key>
 			<string>productName</string>
 			<key>Type</key>

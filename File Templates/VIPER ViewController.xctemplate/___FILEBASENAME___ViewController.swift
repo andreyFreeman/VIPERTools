@@ -9,9 +9,9 @@
 
 import UIKit
 
-final class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController, ___FILEBASENAMEASIDENTIFIER___ViewProtocol {
+final class ___VARIABLE_moduleName___ViewController: UIViewController, ___VARIABLE_moduleName___ViewProtocol {
 
-	var presenter: ___FILEBASENAMEASIDENTIFIER___ViewPresenter!
+	var presenter: ___VARIABLE_moduleName___ViewPresenter!
 
 	override func viewDidLoad() {
         super.viewDidLoad()

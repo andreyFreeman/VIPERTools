@@ -12,7 +12,7 @@ import Foundation
 // MARK: - Wireframe
 
 protocol LoaderWireframeProtocol: class {
-
+    
 }
 
 // MARK: - Presenter
@@ -22,7 +22,8 @@ protocol LoaderViewPresenter: class {
 }
 
 protocol LoaderInteractorPresenter: class {
-    
+    func didStartLoading()
+    func didFinishLoading()
 }
 
 typealias LoaderPresenterProtocol = LoaderViewPresenter & LoaderInteractorPresenter
@@ -30,13 +31,15 @@ typealias LoaderPresenterProtocol = LoaderViewPresenter & LoaderInteractorPresen
 // MARK: - Interactor
 
 protocol LoaderInteractorProtocol: class {
-    
+    func startLoading()
 }
 
 // MARK: - View
 
 protocol LoaderViewProtocol: class {
     var title: String? { set get }
+    func showLoading()
+    func hideLoading()
 }
 
 // MARK: - IO
@@ -46,7 +49,7 @@ protocol LoaderInput: class {
 }
 
 protocol LoaderOutput: class {
-
+    func loaderDidFinish(_ input: LoaderIO)
 }
 
 protocol LoaderIO: class, LoaderInput {

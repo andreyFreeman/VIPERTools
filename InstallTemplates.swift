@@ -32,10 +32,10 @@ func placeFiles() {
             try fileManager.copyItem(atPath: sourceItem, toPath: templatesPath.appending("/"+$0))
             terminalPrint("✅  \($0) intalled")
         }
-        terminalPrint("🎉  All installed and ready to go! Please, enjoy!! 🍺🍺🍺")
+        terminalPrint("🎉  All installed and ready to go! Cheers!! 🍺 🍺 🍺")
     }
     catch {
-        terminalPrint("💩 ! Something went wrong here. Check 'sudo' is supplied or try manual installation")
+        terminalPrint("💩 ! Something went wrong here. Make sure 'sudo' is supplied or try manual installation")
     }
 }
 
@@ -50,9 +50,9 @@ func placeFiles() {
     
     let data = pipe.fileHandleForReading.readDataToEndOfFile()
     let output = String(data: data, encoding: .utf8)!
-    if output.characters.count > 0 {
+    if output.count > 0 {
         let lastIndex = output.index(before: output.endIndex)
-        return output[output.startIndex ..< lastIndex]
+        return String(output[output.startIndex ..< lastIndex])
     }
     return output
 }
@@ -82,4 +82,6 @@ func terminalPrint(_ printable: Any) {
     print(printable)
 }
 
+#if !XCODEAPP
 placeFiles()
+#endif

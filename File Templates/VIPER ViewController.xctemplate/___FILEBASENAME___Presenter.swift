@@ -9,31 +9,31 @@
 
 import UIKit
 
-final class ___FILEBASENAMEASIDENTIFIER___Presenter {
+final class ___VARIABLE_moduleName___Presenter {
 
-    fileprivate weak var view: ___FILEBASENAMEASIDENTIFIER___ViewProtocol!
-    fileprivate let interactor: ___FILEBASENAMEASIDENTIFIER___InteractorProtocol
-    fileprivate let router: ___FILEBASENAMEASIDENTIFIER___WireframeProtocol
+    fileprivate weak var view: ___VARIABLE_moduleName___ViewProtocol!
+    fileprivate let interactor: ___VARIABLE_moduleName___InteractorProtocol
+    fileprivate let router: ___VARIABLE_moduleName___WireframeProtocol
     
-    weak var output: ___FILEBASENAMEASIDENTIFIER___Output?
+    weak var output: ___VARIABLE_moduleName___Output?
 
-    init(view: ___FILEBASENAMEASIDENTIFIER___ViewProtocol, interactor: ___FILEBASENAMEASIDENTIFIER___InteractorProtocol, router: ___FILEBASENAMEASIDENTIFIER___WireframeProtocol) {
+    init(view: ___VARIABLE_moduleName___ViewProtocol, interactor: ___VARIABLE_moduleName___InteractorProtocol, router: ___VARIABLE_moduleName___WireframeProtocol) {
         self.view = view
         self.interactor = interactor
         self.router = router
     }
 }
 
-extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___ViewPresenter {
+extension ___VARIABLE_moduleName___Presenter: ___VARIABLE_moduleName___ViewPresenter {
     func viewLoaded() {
-        view?.title = "___FILEBASENAMEASIDENTIFIER___"
+        view?.title = "___VARIABLE_moduleName___"
     }
 }
 
-extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___InteractorPresenter {
+extension ___VARIABLE_moduleName___Presenter: ___VARIABLE_moduleName___InteractorPresenter {
     
 }
 
-extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___IO {
+extension ___VARIABLE_moduleName___Presenter: ___VARIABLE_moduleName___IO {
     
 }

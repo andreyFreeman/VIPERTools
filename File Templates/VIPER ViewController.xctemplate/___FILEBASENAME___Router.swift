@@ -9,15 +9,15 @@
 
 import UIKit
 
-final class ___FILEBASENAMEASIDENTIFIER___Router: ___FILEBASENAMEASIDENTIFIER___WireframeProtocol {
+final class ___VARIABLE_moduleName___Router: ___VARIABLE_moduleName___WireframeProtocol {
     
     fileprivate weak var view: UIViewController?
     
-    static func createModule(output: ___FILEBASENAMEASIDENTIFIER___Output? = nil) throws -> ViperModule<UIViewController, ___FILEBASENAMEASIDENTIFIER___IO> {
-        let view = ___FILEBASENAMEASIDENTIFIER___ViewController(nibName: nil, bundle: nil)
-        let interactor = ___FILEBASENAMEASIDENTIFIER___Interactor()
-        let router = ___FILEBASENAMEASIDENTIFIER___Router()
-        let presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(view: view, interactor: interactor, router: router)
+    static func createModule(output: ___VARIABLE_moduleName___Output? = nil) throws -> ViperModule<UIViewController, ___VARIABLE_moduleName___IO> {
+        let view = ___VARIABLE_moduleName___ViewController(nibName: nil, bundle: nil)
+        let interactor = ___VARIABLE_moduleName___Interactor()
+        let router = ___VARIABLE_moduleName___Router()
+        let presenter = ___VARIABLE_moduleName___Presenter(view: view, interactor: interactor, router: router)
         
         view.presenter = presenter
         interactor.presenter = presenter
