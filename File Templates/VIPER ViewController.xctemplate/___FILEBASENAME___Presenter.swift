@@ -14,6 +14,8 @@ final class ___FILEBASENAMEASIDENTIFIER___Presenter {
     fileprivate weak var view: ___FILEBASENAMEASIDENTIFIER___ViewProtocol!
     fileprivate let interactor: ___FILEBASENAMEASIDENTIFIER___InteractorProtocol
     fileprivate let router: ___FILEBASENAMEASIDENTIFIER___WireframeProtocol
+    
+    weak var output: ___FILEBASENAMEASIDENTIFIER___Output?
 
     init(view: ___FILEBASENAMEASIDENTIFIER___ViewProtocol, interactor: ___FILEBASENAMEASIDENTIFIER___InteractorProtocol, router: ___FILEBASENAMEASIDENTIFIER___WireframeProtocol) {
         self.view = view
@@ -32,6 +34,6 @@ extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER__
     
 }
 
-extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___Input {
+extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___IO {
     
 }

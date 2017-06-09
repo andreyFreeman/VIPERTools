@@ -1,8 +1,10 @@
 # VIPERTools
 
-All you need to start using VIPER in your iOS project
+All you need to start using VIPER in your iOS project. 
+This Clean Architecture divides an app’s logical structure into distinct layers of responsibility, makes it easier to isolate dependencies, maintain and test your iOS project of any size!
 
 ## Integration
+
 
 ## Install xCode File Templates
 ### Using script

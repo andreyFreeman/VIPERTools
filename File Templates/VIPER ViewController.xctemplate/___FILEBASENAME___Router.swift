@@ -11,11 +11,9 @@ import UIKit
 
 final class ___FILEBASENAMEASIDENTIFIER___Router: ___FILEBASENAMEASIDENTIFIER___WireframeProtocol {
     
-    weak var view: UIViewController?
-    weak var output: ___FILEBASENAMEASIDENTIFIER___Output?
-    weak var input: ___FILEBASENAMEASIDENTIFIER___Input?
+    fileprivate weak var view: UIViewController?
     
-    static func createModule(output: ___FILEBASENAMEASIDENTIFIER___Output? = nil) throws -> ViperModule<UIViewController, ___FILEBASENAMEASIDENTIFIER___Input> {
+    static func createModule(output: ___FILEBASENAMEASIDENTIFIER___Output? = nil) throws -> ViperModule<UIViewController, ___FILEBASENAMEASIDENTIFIER___IO> {
         let view = ___FILEBASENAMEASIDENTIFIER___ViewController(nibName: nil, bundle: nil)
         let interactor = ___FILEBASENAMEASIDENTIFIER___Interactor()
         let router = ___FILEBASENAMEASIDENTIFIER___Router()
@@ -24,8 +22,7 @@ final class ___FILEBASENAMEASIDENTIFIER___Router: ___FILEBASENAMEASIDENTIFIER___
         view.presenter = presenter
         interactor.presenter = presenter
         router.view = view
-        router.output = output
-        router.input = presenter
+        presenter.output = output
         
         return ViperModule(view: view, input: presenter)
     }

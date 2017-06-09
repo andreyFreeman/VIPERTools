@@ -8,10 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		5DCD3E7D1EE98F4000E1AF5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCD3E7C1EE98F4000E1AF5F /* AppDelegate.swift */; };
-		5DCD3E7F1EE98F4000E1AF5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCD3E7E1EE98F4000E1AF5F /* ViewController.swift */; };
-		5DCD3E821EE98F4000E1AF5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DCD3E801EE98F4000E1AF5F /* Main.storyboard */; };
 		5DCD3E841EE98F4000E1AF5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DCD3E831EE98F4000E1AF5F /* Assets.xcassets */; };
 		5DCD3E871EE98F4000E1AF5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DCD3E851EE98F4000E1AF5F /* LaunchScreen.storyboard */; };
+		5DCD3ED51EEA10C300E1AF5F /* ViperModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCD3ED41EEA10C300E1AF5F /* ViperModule.swift */; };
+		5DCD3EDE1EEA111200E1AF5F /* NavigatorInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCD3ED81EEA111200E1AF5F /* NavigatorInteractor.swift */; };
+		5DCD3EDF1EEA111200E1AF5F /* NavigatorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCD3ED91EEA111200E1AF5F /* NavigatorPresenter.swift */; };
+		5DCD3EE01EEA111200E1AF5F /* NavigatorProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCD3EDA1EEA111200E1AF5F /* NavigatorProtocols.swift */; };
+		5DCD3EE11EEA111200E1AF5F /* NavigatorRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCD3EDB1EEA111200E1AF5F /* NavigatorRouter.swift */; };
+		5DCD3EE21EEA111200E1AF5F /* NavigatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCD3EDC1EEA111200E1AF5F /* NavigatorViewController.swift */; };
+		5DCD3EE91EEA127A00E1AF5F /* NavigatorRouter.Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCD3EE81EEA127A00E1AF5F /* NavigatorRouter.Flow.swift */; };
+		5DCD3EF11EEA1E1800E1AF5F /* LoaderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCD3EEB1EEA1E1800E1AF5F /* LoaderInteractor.swift */; };
+		5DCD3EF21EEA1E1800E1AF5F /* LoaderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCD3EEC1EEA1E1800E1AF5F /* LoaderPresenter.swift */; };
+		5DCD3EF31EEA1E1800E1AF5F /* LoaderProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCD3EED1EEA1E1800E1AF5F /* LoaderProtocols.swift */; };
+		5DCD3EF41EEA1E1800E1AF5F /* LoaderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCD3EEE1EEA1E1800E1AF5F /* LoaderRouter.swift */; };
+		5DCD3EF51EEA1E1800E1AF5F /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCD3EEF1EEA1E1800E1AF5F /* LoaderViewController.swift */; };
+		5DCD3EF61EEA1E1800E1AF5F /* LoaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DCD3EF01EEA1E1800E1AF5F /* LoaderViewController.xib */; };
+		5DCD3EF81EEA9B8000E1AF5F /* NavigatorPresenter.LoaderOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCD3EF71EEA9B8000E1AF5F /* NavigatorPresenter.LoaderOutput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,11 +42,23 @@
 /* Begin PBXFileReference section */
 		5DCD3E791EE98F4000E1AF5F /* VIPERToolsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPERToolsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DCD3E7C1EE98F4000E1AF5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5DCD3E7E1EE98F4000E1AF5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5DCD3E811EE98F4000E1AF5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5DCD3E831EE98F4000E1AF5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DCD3E861EE98F4000E1AF5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5DCD3E881EE98F4000E1AF5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DCD3ED41EEA10C300E1AF5F /* ViperModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperModule.swift; sourceTree = "<group>"; };
+		5DCD3ED81EEA111200E1AF5F /* NavigatorInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigatorInteractor.swift; sourceTree = "<group>"; };
+		5DCD3ED91EEA111200E1AF5F /* NavigatorPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigatorPresenter.swift; sourceTree = "<group>"; };
+		5DCD3EDA1EEA111200E1AF5F /* NavigatorProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigatorProtocols.swift; sourceTree = "<group>"; };
+		5DCD3EDB1EEA111200E1AF5F /* NavigatorRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigatorRouter.swift; sourceTree = "<group>"; };
+		5DCD3EDC1EEA111200E1AF5F /* NavigatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigatorViewController.swift; sourceTree = "<group>"; };
+		5DCD3EE81EEA127A00E1AF5F /* NavigatorRouter.Flow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigatorRouter.Flow.swift; sourceTree = "<group>"; };
+		5DCD3EEB1EEA1E1800E1AF5F /* LoaderInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderInteractor.swift; sourceTree = "<group>"; };
+		5DCD3EEC1EEA1E1800E1AF5F /* LoaderPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderPresenter.swift; sourceTree = "<group>"; };
+		5DCD3EED1EEA1E1800E1AF5F /* LoaderProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderProtocols.swift; sourceTree = "<group>"; };
+		5DCD3EEE1EEA1E1800E1AF5F /* LoaderRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderRouter.swift; sourceTree = "<group>"; };
+		5DCD3EEF1EEA1E1800E1AF5F /* LoaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
+		5DCD3EF01EEA1E1800E1AF5F /* LoaderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoaderViewController.xib; sourceTree = "<group>"; };
+		5DCD3EF71EEA9B8000E1AF5F /* NavigatorPresenter.LoaderOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigatorPresenter.LoaderOutput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,14 +91,75 @@
 		5DCD3E7B1EE98F4000E1AF5F /* VIPERToolsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5DCD3ED31EEA10C300E1AF5F /* ViperModule */,
+				5DCD3ED61EEA10DA00E1AF5F /* Modules */,
 				5DCD3E7C1EE98F4000E1AF5F /* AppDelegate.swift */,
-				5DCD3E7E1EE98F4000E1AF5F /* ViewController.swift */,
-				5DCD3E801EE98F4000E1AF5F /* Main.storyboard */,
 				5DCD3E831EE98F4000E1AF5F /* Assets.xcassets */,
 				5DCD3E851EE98F4000E1AF5F /* LaunchScreen.storyboard */,
 				5DCD3E881EE98F4000E1AF5F /* Info.plist */,
 			);
 			path = VIPERToolsDemo;
+			sourceTree = "<group>";
+		};
+		5DCD3ED31EEA10C300E1AF5F /* ViperModule */ = {
+			isa = PBXGroup;
+			children = (
+				5DCD3ED41EEA10C300E1AF5F /* ViperModule.swift */,
+			);
+			name = ViperModule;
+			path = ../../ViperModule;
+			sourceTree = "<group>";
+		};
+		5DCD3ED61EEA10DA00E1AF5F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				5DCD3EF91EEAAAC500E1AF5F /* ItemsList */,
+				5DCD3EEA1EEA1E0D00E1AF5F /* Loader */,
+				5DCD3ED71EEA10FC00E1AF5F /* AppNavigator  */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		5DCD3ED71EEA10FC00E1AF5F /* AppNavigator  */ = {
+			isa = PBXGroup;
+			children = (
+				5DCD3EE71EEA126100E1AF5F /* Flow */,
+				5DCD3ED81EEA111200E1AF5F /* NavigatorInteractor.swift */,
+				5DCD3ED91EEA111200E1AF5F /* NavigatorPresenter.swift */,
+				5DCD3EDA1EEA111200E1AF5F /* NavigatorProtocols.swift */,
+				5DCD3EDB1EEA111200E1AF5F /* NavigatorRouter.swift */,
+				5DCD3EDC1EEA111200E1AF5F /* NavigatorViewController.swift */,
+			);
+			path = "AppNavigator ";
+			sourceTree = "<group>";
+		};
+		5DCD3EE71EEA126100E1AF5F /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				5DCD3EE81EEA127A00E1AF5F /* NavigatorRouter.Flow.swift */,
+				5DCD3EF71EEA9B8000E1AF5F /* NavigatorPresenter.LoaderOutput.swift */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		5DCD3EEA1EEA1E0D00E1AF5F /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				5DCD3EEB1EEA1E1800E1AF5F /* LoaderInteractor.swift */,
+				5DCD3EEC1EEA1E1800E1AF5F /* LoaderPresenter.swift */,
+				5DCD3EED1EEA1E1800E1AF5F /* LoaderProtocols.swift */,
+				5DCD3EEE1EEA1E1800E1AF5F /* LoaderRouter.swift */,
+				5DCD3EEF1EEA1E1800E1AF5F /* LoaderViewController.swift */,
+				5DCD3EF01EEA1E1800E1AF5F /* LoaderViewController.xib */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
+		5DCD3EF91EEAAAC500E1AF5F /* ItemsList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ItemsList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +224,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DCD3E871EE98F4000E1AF5F /* LaunchScreen.storyboard in Resources */,
+				5DCD3EF61EEA1E1800E1AF5F /* LoaderViewController.xib in Resources */,
 				5DCD3E841EE98F4000E1AF5F /* Assets.xcassets in Resources */,
-				5DCD3E821EE98F4000E1AF5F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,22 +236,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DCD3E7F1EE98F4000E1AF5F /* ViewController.swift in Sources */,
+				5DCD3EE11EEA111200E1AF5F /* NavigatorRouter.swift in Sources */,
+				5DCD3EF41EEA1E1800E1AF5F /* LoaderRouter.swift in Sources */,
+				5DCD3EE21EEA111200E1AF5F /* NavigatorViewController.swift in Sources */,
+				5DCD3ED51EEA10C300E1AF5F /* ViperModule.swift in Sources */,
+				5DCD3EDE1EEA111200E1AF5F /* NavigatorInteractor.swift in Sources */,
+				5DCD3EF51EEA1E1800E1AF5F /* LoaderViewController.swift in Sources */,
+				5DCD3EF31EEA1E1800E1AF5F /* LoaderProtocols.swift in Sources */,
+				5DCD3EF11EEA1E1800E1AF5F /* LoaderInteractor.swift in Sources */,
+				5DCD3EDF1EEA111200E1AF5F /* NavigatorPresenter.swift in Sources */,
+				5DCD3EE91EEA127A00E1AF5F /* NavigatorRouter.Flow.swift in Sources */,
+				5DCD3EF21EEA1E1800E1AF5F /* LoaderPresenter.swift in Sources */,
 				5DCD3E7D1EE98F4000E1AF5F /* AppDelegate.swift in Sources */,
+				5DCD3EE01EEA111200E1AF5F /* NavigatorProtocols.swift in Sources */,
+				5DCD3EF81EEA9B8000E1AF5F /* NavigatorPresenter.LoaderOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5DCD3E801EE98F4000E1AF5F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5DCD3E811EE98F4000E1AF5F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5DCD3E851EE98F4000E1AF5F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
