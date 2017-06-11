@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16F73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Movie" representedClassName="Movie" syncable="YES">
+        <attribute name="imdbId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="posterUrlString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sortingOrder" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" indexed="YES" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="details" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="MovieDetails" inverseName="movie" inverseEntity="MovieDetails" syncable="YES"/>
+        <relationship name="searchRequest" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SearchRequest" inverseName="results" inverseEntity="SearchRequest" syncable="YES"/>
+    </entity>
+    <entity name="MovieDetails" representedClassName="MovieDetails" syncable="YES">
+        <attribute name="actors" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="awards" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="director" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="genre" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imdbRating" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="plot" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rating" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="releasedAt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="runtime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="writer" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="movie" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Movie" inverseName="details" inverseEntity="Movie" syncable="YES"/>
+    </entity>
+    <entity name="SearchRequest" representedClassName="SearchRequest" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="page" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="params" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="term" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="totalExpected" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="results" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Movie" inverseName="searchRequest" inverseEntity="Movie" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Movie" positionX="-63" positionY="-18" width="128" height="165"/>
+        <element name="MovieDetails" positionX="-54" positionY="72" width="128" height="225"/>
+        <element name="SearchRequest" positionX="-54" positionY="36" width="128" height="150"/>
+    </elements>
+</model>

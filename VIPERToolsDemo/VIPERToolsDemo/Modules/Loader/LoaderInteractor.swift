@@ -8,7 +8,20 @@
 //
 
 import UIKit
+import Services
 
 final class LoaderInteractor: LoaderInteractorProtocol {
+    
     weak var presenter: LoaderInteractorPresenter?
+    
+    let service: ServicesPrepare
+    init(service: ServicesPrepare) {
+        self.service = service
+    }
+    
+    func startLoading() {
+        service.prepare { [weak self] in
+            self?.presenter?.didFinishLoading()
+        }
+    }
 }

@@ -13,7 +13,8 @@ import UIKit
 // MARK: - Wireframe
 
 protocol NavigatorWireframeProtocol: class {
-    @discardableResult func navigateToLoader(with output: LoaderOutput?, animated: Bool) throws -> LoaderInput
+    func navigateToLoader(with output: LoaderOutput?, animated: Bool)
+    func navigateToMainSearch(with output: SearchMoviesOutput?)
     func navigate(to view: UIViewController, mode: NavigatorInputMode, animated: Bool)
 }
 

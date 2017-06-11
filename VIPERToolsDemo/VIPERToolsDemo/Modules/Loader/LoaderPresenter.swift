@@ -27,11 +27,24 @@ final class LoaderPresenter {
 extension LoaderPresenter: LoaderViewPresenter {
     func viewLoaded() {
         view?.title = "Loader"
+        interactor.startLoading()
     }
 }
 
 extension LoaderPresenter: LoaderInteractorPresenter {
     
+    func didStartLoading() {
+        DispatchQueue.main.async {
+            self.view.showLoading()
+        }
+    }
+    
+    func didFinishLoading() {
+        DispatchQueue.main.async {
+            self.view?.hideLoading()
+            self.output?.loaderDidFinish(self)
+        }
+    }
 }
 
 extension LoaderPresenter: LoaderIO {
