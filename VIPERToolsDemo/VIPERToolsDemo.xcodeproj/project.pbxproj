@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5D17F7B91EEB2F8C0052A625 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D17F7B81EEB2F8C0052A625 /* main.swift */; };
-		5D17F7BA1EEB30500052A625 /* InstallTemplates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D17F7B61EEB2F050052A625 /* InstallTemplates.swift */; };
 		5D17F7BD1EEB33710052A625 /* ServiceHUB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D17F7BC1EEB33710052A625 /* ServiceHUB.swift */; };
 		5D17F7C31EEB34330052A625 /* ServicesPrepare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D17F7C21EEB34330052A625 /* ServicesPrepare.swift */; };
 		5D17F8681EEB53F70052A625 /* SearchMoviesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D17F8621EEB53F70052A625 /* SearchMoviesInteractor.swift */; };
@@ -168,8 +167,25 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5D16288E1EED8F5200053D64 /* ___FILEBASENAME___Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Interactor.swift"; sourceTree = "<group>"; };
+		5D16288F1EED8F5200053D64 /* ___FILEBASENAME___Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Presenter.swift"; sourceTree = "<group>"; };
+		5D1628901EED8F5200053D64 /* ___FILEBASENAME___Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Protocols.swift"; sourceTree = "<group>"; };
+		5D1628911EED8F5200053D64 /* ___FILEBASENAME___Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Router.swift"; sourceTree = "<group>"; };
+		5D1628921EED8F5200053D64 /* ___FILEBASENAME___View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___View.swift"; sourceTree = "<group>"; };
+		5D1628931EED8F5200053D64 /* ___FILEBASENAME___View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "___FILEBASENAME___View.xib"; sourceTree = "<group>"; };
+		5D1628941EED8F5200053D64 /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
+		5D1628951EED8F5200053D64 /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
+		5D1628961EED8F5200053D64 /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		5D1628981EED8F5200053D64 /* ___FILEBASENAME___Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Interactor.swift"; sourceTree = "<group>"; };
+		5D1628991EED8F5200053D64 /* ___FILEBASENAME___Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Presenter.swift"; sourceTree = "<group>"; };
+		5D16289A1EED8F5200053D64 /* ___FILEBASENAME___Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Protocols.swift"; sourceTree = "<group>"; };
+		5D16289B1EED8F5200053D64 /* ___FILEBASENAME___Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Router.swift"; sourceTree = "<group>"; };
+		5D16289C1EED8F5200053D64 /* ___FILEBASENAME___ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___ViewController.swift"; sourceTree = "<group>"; };
+		5D16289D1EED8F5200053D64 /* ___FILEBASENAME___ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "___FILEBASENAME___ViewController.xib"; sourceTree = "<group>"; };
+		5D16289E1EED8F5200053D64 /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
+		5D16289F1EED8F5200053D64 /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
+		5D1628A01EED8F5200053D64 /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
 		5D17F7AC1EEB2C760052A625 /* CodeTemplates */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeTemplates; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D17F7B61EEB2F050052A625 /* InstallTemplates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InstallTemplates.swift; path = ../../InstallTemplates.swift; sourceTree = "<group>"; };
 		5D17F7B81EEB2F8C0052A625 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		5D17F7BC1EEB33710052A625 /* ServiceHUB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceHUB.swift; sourceTree = "<group>"; };
 		5D17F7C21EEB34330052A625 /* ServicesPrepare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesPrepare.swift; sourceTree = "<group>"; };
@@ -310,10 +326,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D16288C1EED8F5200053D64 /* File Templates */ = {
+			isa = PBXGroup;
+			children = (
+				5D16288D1EED8F5200053D64 /* VIPER View.xctemplate */,
+				5D1628971EED8F5200053D64 /* VIPER ViewController.xctemplate */,
+			);
+			path = "File Templates";
+			sourceTree = "<group>";
+		};
+		5D16288D1EED8F5200053D64 /* VIPER View.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				5D16288E1EED8F5200053D64 /* ___FILEBASENAME___Interactor.swift */,
+				5D16288F1EED8F5200053D64 /* ___FILEBASENAME___Presenter.swift */,
+				5D1628901EED8F5200053D64 /* ___FILEBASENAME___Protocols.swift */,
+				5D1628911EED8F5200053D64 /* ___FILEBASENAME___Router.swift */,
+				5D1628921EED8F5200053D64 /* ___FILEBASENAME___View.swift */,
+				5D1628931EED8F5200053D64 /* ___FILEBASENAME___View.xib */,
+				5D1628941EED8F5200053D64 /* TemplateIcon.png */,
+				5D1628951EED8F5200053D64 /* TemplateIcon@2x.png */,
+				5D1628961EED8F5200053D64 /* TemplateInfo.plist */,
+			);
+			path = "VIPER View.xctemplate";
+			sourceTree = "<group>";
+		};
+		5D1628971EED8F5200053D64 /* VIPER ViewController.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				5D1628981EED8F5200053D64 /* ___FILEBASENAME___Interactor.swift */,
+				5D1628991EED8F5200053D64 /* ___FILEBASENAME___Presenter.swift */,
+				5D16289A1EED8F5200053D64 /* ___FILEBASENAME___Protocols.swift */,
+				5D16289B1EED8F5200053D64 /* ___FILEBASENAME___Router.swift */,
+				5D16289C1EED8F5200053D64 /* ___FILEBASENAME___ViewController.swift */,
+				5D16289D1EED8F5200053D64 /* ___FILEBASENAME___ViewController.xib */,
+				5D16289E1EED8F5200053D64 /* TemplateIcon.png */,
+				5D16289F1EED8F5200053D64 /* TemplateIcon@2x.png */,
+				5D1628A01EED8F5200053D64 /* TemplateInfo.plist */,
+			);
+			path = "VIPER ViewController.xctemplate";
+			sourceTree = "<group>";
+		};
 		5D17F7AD1EEB2C760052A625 /* CodeTemplates */ = {
 			isa = PBXGroup;
 			children = (
-				5D17F7B61EEB2F050052A625 /* InstallTemplates.swift */,
+				5D16288C1EED8F5200053D64 /* File Templates */,
 				5D17F7B81EEB2F8C0052A625 /* main.swift */,
 			);
 			path = CodeTemplates;
@@ -636,6 +693,7 @@
 				5D17F7A81EEB2C760052A625 /* Sources */,
 				5D17F7A91EEB2C760052A625 /* Frameworks */,
 				5D17F7AA1EEB2C760052A625 /* CopyFiles */,
+				5D1628A11EED901300053D64 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -920,13 +978,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5D1628A11EED901300053D64 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -a \"${SRCROOT}/CodeTemplates/VIPER\" \"${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5D17F7A81EEB2C760052A625 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5D17F7B91EEB2F8C0052A625 /* main.swift in Sources */,
-				5D17F7BA1EEB30500052A625 /* InstallTemplates.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1563,6 +1636,7 @@
 				5D17F7B21EEB2C760052A625 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5DCD3E741EE98F4000E1AF5F /* Build configuration list for PBXProject "VIPERToolsDemo" */ = {
 			isa = XCConfigurationList;
