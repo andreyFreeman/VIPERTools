@@ -49,15 +49,15 @@ func placeFiles() {
     
     let data = pipe.fileHandleForReading.readDataToEndOfFile()
     let output = String(data: data, encoding: .utf8)!
-    if output.count > 0 {
+    if output.characters.count > 0 {
         let lastIndex = output.index(before: output.endIndex)
-        return String(output[output.startIndex ..< lastIndex])
+        return String(output[output.startIndex..<lastIndex])
     }
     return output
 }
 
 @discardableResult func bash(_ command: String, _ args: [String]) -> String {
-    let path = shell("/bin/bash", [ "-l", "-c", "which \(command)" ])
+    let path = shell("/bin/bash", ["-l", "-c", "which \(command)"])
     return shell(path, args)
 }
 
