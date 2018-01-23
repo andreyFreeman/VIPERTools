@@ -49,6 +49,6 @@ protocol ___VARIABLE_moduleName___Output: class {
     
 }
 
-protocol ___VARIABLE_moduleName___IO: class, ___VARIABLE_moduleName___Input {
+protocol ___VARIABLE_moduleName___IO: ___VARIABLE_moduleName___Input {
     weak var output: ___VARIABLE_moduleName___Output? { set get }
 }

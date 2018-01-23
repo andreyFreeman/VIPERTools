@@ -1,20 +1,12 @@
 //
 //  ServicesHUB.Integration.swift
-//  Jobok
+//  VIPERTools
 //
 //  Created by ANDREY KLADOV on 01/05/2017.
 //  Copyright © 2017 Jobok. All rights reserved.
 //
 
 import Foundation
-
-public func register<Service>(_ factory: @escaping () throws -> Service) {
-    ServiceLoader.register(factory)
-}
-
-public func inject<Service>() throws -> Service {
-    return try ServiceLoader.inject()
-}
 
 public final class ServiceLoader: ServiceLocator {
     
