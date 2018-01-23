@@ -11,7 +11,7 @@ import UIKit
 
 final class ___VARIABLE_moduleName___Router: ___VARIABLE_moduleName___WireframeProtocol {
     
-    fileprivate weak var view: UIViewController?
+    fileprivate weak var view: (UIViewController & ___VARIABLE_moduleName___ViewProtocol)?
     
     static func createModule(output: ___VARIABLE_moduleName___Output? = nil) throws -> ViperModule<UIViewController, ___VARIABLE_moduleName___IO> {
         let view = ___VARIABLE_moduleName___ViewController(nibName: nil, bundle: nil)
