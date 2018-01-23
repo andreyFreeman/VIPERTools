@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Services
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,12 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        Services.setupServices()
-        let module = try! NavigatorRouter.createModule()
-        module.input.showLoader(animated: false)
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = module.view
-        window?.makeKeyAndVisible()
         return true
     }
 
